@@ -1,8 +1,10 @@
 function Menu() {
   return (
-    <section className="w-full py-16">
+    <section className="w-full mt-24">
       <div className="flex justify-center items-center w-full text-center text-white/95 uppercase tracking-[3px] text-[2.525rem] mb-16 font-bold relative">
-        <h2 className="text-shadow-[1px_1px_1px_rgba(0,0,0,0.3)]">Menu</h2>
+        <h2 className="text-shadow-[1px_1px_1px_rgba(0,0,0,0.3)] text-7xl">
+          Menu
+        </h2>
       </div>
 
       <div className="mx-auto px-8 mb-60">

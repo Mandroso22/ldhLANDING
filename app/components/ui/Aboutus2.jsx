@@ -136,7 +136,7 @@ function Aboutus() {
             >
               <div className="relative overflow-hidden rounded-3xl shadow-2xl">
                 <img
-                  src="img/pic5.png"
+                  src="img/pic7.jpg"
                   alt="Intérieur du restaurant La Douce Heure"
                   className="w-full h-64 sm:h-80 lg:h-96 object-cover transition-all duration-700 transform group-hover:scale-105"
                 />
