@@ -29,7 +29,7 @@ function Navbar() {
           <li className="cursor-pointer">
             <a
               href="#"
-              className="font-['Playfair_Display'] text-shadow-[1px_1px_2px_rgba(0,0,0,0.3)] font-medium text-white/80 no-underline"
+              className="text-base font-['Playfair_Display'] text-shadow-[1px_1px_2px_rgba(0,0,0,0.3)] font-medium text-white/80 no-underline"
             >
               Menu
             </a>
@@ -37,7 +37,7 @@ function Navbar() {
           <li className="cursor-pointer">
             <a
               href="#"
-              className="font-['Playfair_Display'] text-shadow-[1px_1px_2px_rgba(0,0,0,0.3)] font-medium text-white/80 no-underline"
+              className="text-base font-['Playfair_Display'] text-shadow-[1px_1px_2px_rgba(0,0,0,0.3)] font-medium text-white/80 no-underline"
             >
               À propos
             </a>
@@ -45,7 +45,7 @@ function Navbar() {
           <li className="cursor-pointer">
             <a
               href="./contact"
-              className="font-['Playfair_Display'] text-shadow-[1px_1px_2px_rgba(0,0,0,0.3)] font-medium text-white/80 no-underline"
+              className="text-base font-['Playfair_Display'] text-shadow-[1px_1px_2px_rgba(0,0,0,0.3)] font-medium text-white/80 no-underline"
             >
               Contacter
             </a>

@@ -5,7 +5,7 @@ function Aboutus() {
         <img
           src="img/pic5.png"
           alt="aboutus"
-          className="w-[50vw] h-[70%] border-[1px] border-[#321B15] rounded-sm"
+          className="w-[50vw] h-[30%] border-[1px] border-[#321B15] rounded-sm"
         />
         <div className="text-center p-8">
           <h2 className="text-2xl text-[#321B15] uppercase font-bold md:text-6xl lg:text-8xl">
@@ -18,7 +18,7 @@ function Aboutus() {
       </div>
       <div className="flex justify-center items-center">
         <div className="w-[50vw] h-[100%] rounded-sm">
-          <strong className="text-[1.225rem] px-4 text-center text-[#321B15] font-['Space_Grotesk'] md:text-2xl">
+          <strong className="text-[0.955rem] block text-center text-[#321B15] font-['Space_Grotesk'] md:text-2xl">
             Plus qu'une crêpe, un moment à partager.
           </strong>
         </div>

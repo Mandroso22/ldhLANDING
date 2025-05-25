@@ -45,7 +45,7 @@ const Testimonials = () => {
       name: "Solveig Fernagu",
       rating: 5,
       date: "Il y a 4 jours",
-      text: "Le milk shake extra.Le bowl est super bon même si ce n’est pas du riz noir. C’est frais, et super gentille hôtesse. Top ❤️❤️",
+      text: "Le milk shake extra.Le bowl est super bon même si ce n'est pas du riz noir. C'est frais, et super gentille hôtesse. Top ❤️❤️",
       avatar: "SF",
     },
   ];
@@ -57,7 +57,7 @@ const Testimonials = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentReview((prev) => (prev + 1) % reviews.length);
-    }, 6000);
+    }, 16000);
     return () => clearInterval(interval);
   }, [reviews.length]);
 
@@ -177,10 +177,15 @@ const Testimonials = () => {
                 className="font-space text-xl max-w-2xl mx-auto leading-relaxed"
                 style={{ color: "rgb(186,176,175)" }}
               >
-                Découvrez les avis authentiques de nos clients qui ont vécu
-                <span className="font-medium" style={{ color: "#4a2a21" }}>
+                Découvrez les avis authentiques de clients ayant vécu
+                l'expérience
+                <br />
+                <span
+                  className="font-medium font-playfair"
+                  style={{ color: "#4a2a21" }}
+                >
                   {" "}
-                  l'expérience La Douce Heure
+                  La Douce Heure
                 </span>
               </p>
             </div>
@@ -190,7 +195,7 @@ const Testimonials = () => {
           <div className="grid lg:grid-cols-3 gap-8 mb-12">
             {/* Avis principal en rotation */}
             <div className="lg:col-span-2">
-              <div className="relative h-80 overflow-hidden rounded-3xl bg-gradient-to-br from-white to-gray-50 shadow-2xl">
+              <div className="relative h-[400px] overflow-hidden rounded-3xl bg-gradient-to-br from-white to-gray-50 shadow-2xl">
                 {reviews.map((review, index) => (
                   <div
                     key={review.id}
@@ -231,7 +236,7 @@ const Testimonials = () => {
                     </div>
 
                     <blockquote
-                      className="font-space text-lg leading-relaxed"
+                      className="font-space text-lg leading-relaxed px-4 py-2 max-h-[220px] overflow-y-auto"
                       style={{ color: "#4a2a21" }}
                     >
                       "{review.text}"
