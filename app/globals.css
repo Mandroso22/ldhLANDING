@@ -10,3 +10,71 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.gradient-overlay {
+  background: linear-gradient(
+    135deg,
+    rgba(50, 27, 21, 0.1) 0%,
+    rgba(74, 42, 33, 0.05) 50%,
+    rgba(248, 248, 248, 0.1) 100%
+  );
+  position: relative;
+  overflow: hidden;
+}
+
+.gradient-overlay::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(50, 27, 21, 0.05) 0%,
+    rgba(74, 42, 33, 0.03) 50%,
+    rgba(248, 248, 248, 0.05) 100%
+  );
+  pointer-events: none;
+}
+
+.decorative-dot {
+  position: absolute;
+  border-radius: 50%;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.decorative-dot:nth-child(1) {
+  top: 25%;
+  left: 10%;
+  width: 8px;
+  height: 8px;
+  background-color: rgba(251, 191, 36, 0.4);
+}
+
+.decorative-dot:nth-child(2) {
+  top: 50%;
+  right: 20%;
+  width: 4px;
+  height: 4px;
+  background-color: rgba(251, 146, 60, 0.4);
+  animation-delay: 1s;
+}
+
+.decorative-dot:nth-child(3) {
+  bottom: 30%;
+  left: 15%;
+  width: 6px;
+  height: 6px;
+  background-color: rgba(234, 179, 8, 0.4);
+  animation-delay: 2s;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.4;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 0.2;
+  }
+}

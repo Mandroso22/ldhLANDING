@@ -5,14 +5,18 @@ import Footer from "./components/layouts/Footer";
 import Hero from "./components/layouts/Hero";
 import Slider from "./components/ui/Slider";
 import Aboutus from "./components/ui/Aboutus";
+import Testimonials from "./components/ui/Testimonials";
+import Aboutus2 from "./components/ui/Aboutus2";
 export default function Home() {
   return (
     <>
       <Navbar />
       <Hero />
       <Menu />
-      <Slider />
       <Aboutus />
+      <Aboutus2 />
+      <Slider />
+      <Testimonials />
       <Location />
       <Footer />
     </>

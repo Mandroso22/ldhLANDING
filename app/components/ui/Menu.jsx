@@ -1,11 +1,11 @@
 function Menu() {
   return (
-    <>
-      <div className="flex justify-center items-center w-full text-center text-white/95 uppercase tracking-[3px] text-[2.525rem] mb-16 font-bold relative mt-16">
+    <section className="w-full py-16">
+      <div className="flex justify-center items-center w-full text-center text-white/95 uppercase tracking-[3px] text-[2.525rem] mb-16 font-bold relative">
         <h2 className="text-shadow-[1px_1px_1px_rgba(0,0,0,0.3)]">Menu</h2>
       </div>
 
-      <div className="mx-auto px-8">
+      <div className="mx-auto px-8 mb-60">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="bg-[#f8f8f8] relative border border-[#ddd] rounded-lg p-4 shadow-[0_2px_5px_rgba(0,0,0,0.1)] transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-[0_10px_20px_rgba(0,0,0,0.1)] cursor-pointer">
             <div className="pr-24 md:pr-24">
@@ -74,7 +74,7 @@ function Menu() {
           </div>
         </div>
       </div>
-    </>
+    </section>
   );
 }
 

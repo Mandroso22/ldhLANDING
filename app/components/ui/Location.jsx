@@ -1,8 +1,10 @@
 function Location() {
   return (
     <section className="w-full mt-16 mb-16" id="location">
-      <div className="text-center  p-16">
-        <h2 className="text-[1.225rem]">Nous trouver</h2>
+      <div className="text-center text-white/95 font-bold uppercase tracking-[3px] p-4">
+        <h2 className="text-[2.525rem] text-shadow-[1px_1px_1px_rgba(0,0,0,0.3)]">
+          Retrouvez-nous
+        </h2>
       </div>
 
       <div className="max-w-[1200px] mx-auto px-4">
@@ -53,6 +55,12 @@ function Location() {
                 </div>
               </div>
             </div>
+            <a
+              href="./contact"
+              className="inline-block bg-[#321B15] text-white text-center px-4 py-2 rounded-md cursor-pointer hover:bg-[#4a2a21] transition-colors"
+            >
+              Nous contacter
+            </a>
           </div>
         </div>
       </div>
