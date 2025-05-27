@@ -7,7 +7,7 @@ function Menu() {
         </h2>
       </div>
 
-      <div className="mx-auto px-8 mb-60">
+      <div className="mx-auto px-8 mb-24">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="bg-[#f8f8f8] relative border border-[#ddd] rounded-lg p-4 shadow-[0_2px_5px_rgba(0,0,0,0.1)] transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-[0_10px_20px_rgba(0,0,0,0.1)] cursor-pointer">
             <div className="pr-24 md:pr-24">

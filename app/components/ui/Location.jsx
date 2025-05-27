@@ -90,10 +90,10 @@ function Location() {
       {
         scale: 1,
         opacity: 1,
-        duration: 1.2,
+        duration: 0.3,
         scrollTrigger: {
           trigger: contactButtonRef.current,
-          start: "top 90%",
+          start: "top 75%",
           toggleActions: "play none none reverse",
         },
       }
@@ -191,7 +191,7 @@ function Location() {
             <a
               ref={contactButtonRef}
               href="./contact"
-              className="inline-block bg-[#321B15] text-white text-center hover:bg-[#4a2a21] px-4 py-2 rounded-md cursor-pointer transition-all transform-gpu mt-4"
+              className="inline-block bg-[#321B15] text-white text-center hover:bg-[#4a2a21] px-4 py-2 rounded-md cursor-pointer transform-gpu mt-4"
             >
               Nous contacter
             </a>

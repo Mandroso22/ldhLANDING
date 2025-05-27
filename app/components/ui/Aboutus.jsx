@@ -88,8 +88,8 @@ function Aboutus() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="w-full py-16">
-      <div className="flex justify-center items-center">
+    <section ref={sectionRef} className="w-full py-12">
+      <div className="flex justify-center md:mb-16 mb-8 items-center">
         <img
           ref={image1Ref}
           src="img/pic5.png"
@@ -105,8 +105,8 @@ function Aboutus() {
           </p>
         </div>
       </div>
-      <div className="flex justify-center mt-16 items-center">
-        <div ref={text2Ref} className="w-[50vw] h-[100%] rounded-sm">
+      <div className="flex justify-center md:mt-40 mt-16 items-center">
+        <div ref={text2Ref} className="w-[50vw] h-[100%] rounded-xs">
           <strong className="text-[0.955rem] block text-center text-[#321B15] font-['Space_Grotesk'] md:text-2xl">
             Plus qu'une crêpe, un moment à partager.
           </strong>
