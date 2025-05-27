@@ -90,7 +90,7 @@ function Location() {
       {
         scale: 1,
         opacity: 1,
-        duration: 0.3,
+        duration: 0.5,
         scrollTrigger: {
           trigger: contactButtonRef.current,
           start: "top 75%",
