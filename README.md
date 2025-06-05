@@ -1,8 +1,6 @@
 # La Douce Heure - Creperie Website 🥞
-_French version will follow / La version française suivra_
 
 A modern and elegant website for the "La Douce Heure" creperie, developed with Next.js and modern web technologies.
-
 
 ## 🌟 Features
 
@@ -121,3 +119,127 @@ For any questions or suggestions, feel free to contact us via:
 ---
 
 Developed with ❤️ for La Douce Heure
+
+---
+
+# La Douce Heure - Site Web Crêperie 🥞
+
+Un site web moderne et élégant pour la crêperie "La Douce Heure", développé avec Next.js et des technologies web modernes.
+
+## 🌟 Fonctionnalités
+
+- **Design Responsive** : Interface adaptative pour tous les appareils
+- **Animations Modernes** : Utilisation de GSAP pour des animations fluides et élégantes
+- **Formulaire de Contact** : Système de contact interactif avec validation en temps réel
+- **Carrousel d'Images** : Présentation dynamique des photos de l'établissement
+- **Intégration Google Maps** : Localisation facile de la crêperie
+- **Témoignages Clients** : Affichage dynamique des avis Google
+- **Menu Interactif** : Présentation élégante des offres
+- **Navigation Fluide** : Menu responsive avec animations
+
+## 🛠️ Technologies Utilisées
+
+- **Framework** : Next.js 13+
+- **Styling** : Tailwind CSS
+- **Animations** : GSAP (GreenSock Animation Platform)
+- **Polices** : Playfair Display & Space Grotesk
+- **Optimisation** : Images optimisées, lazy loading
+- **Responsive Design** : Mobile-first approach
+
+## 🚀 Installation
+
+1. Clonez le repository :
+
+```bash
+git clone https://github.com/votre-username/la-douce-heure.git
+```
+
+2. Installez les dépendances :
+
+```bash
+cd la-douce-heure
+npm install
+# ou
+yarn install
+```
+
+3. Lancez le serveur de développement :
+
+```bash
+npm run dev
+# ou
+yarn dev
+```
+
+4. Ouvrez [http://localhost:3000](http://localhost:3000) dans votre navigateur.
+
+## 📁 Structure du Projet
+
+```
+la-douce-heure/
+├── app/
+│   ├── components/
+│   │   ├── layouts/      # Composants de mise en page (Navbar, Footer)
+│   │   └── ui/          # Composants d'interface utilisateur
+│   ├── contact/         # Page de contact
+│   └── page.jsx         # Page d'accueil
+├── public/
+│   └── img/            # Images et assets
+└── styles/             # Styles globaux
+```
+
+## 🎨 Composants Principaux
+
+- **Hero** : Section d'accueil avec image de fond et texte
+- **Aboutus** : Présentation de l'établissement avec animations GSAP
+- **Menu** : Affichage des offres avec design moderne
+- **Location** : Intégration Google Maps et informations de contact
+- **Testimonials** : Carrousel de témoignages clients
+- **Contact** : Formulaire de contact avec validation
+
+## 🔧 Configuration
+
+Le projet utilise plusieurs configurations importantes :
+
+- **Tailwind CSS** : Configuration personnalisée pour le design
+- **GSAP** : Animations optimisées pour les performances
+- **Next.js** : Configuration pour le rendu côté serveur
+
+## 📱 Responsive Design
+
+- Mobile-first approach
+- Breakpoints optimisés pour tous les appareils
+- Images responsives
+- Menu adaptatif
+
+## 🎯 Optimisations
+
+- Images optimisées
+- Lazy loading des composants
+- Animations optimisées pour les performances
+- Code splitting automatique
+
+## 🤝 Contribution
+
+Les contributions sont les bienvenues ! N'hésitez pas à :
+
+1. Fork le projet
+2. Créer une branche pour votre fonctionnalité
+3. Commiter vos changements
+4. Pousser vers la branche
+5. Ouvrir une Pull Request
+
+## 📄 Licence
+
+Ce projet est sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.
+
+## 👥 Contact
+
+Pour toute question ou suggestion, n'hésitez pas à nous contacter via :
+
+- Email : [votre-email@example.com]
+- Instagram : [@la.douce.heure017]
+
+---
+
+Développé avec ❤️ pour La Douce Heure
