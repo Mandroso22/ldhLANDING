@@ -1,4 +1,5 @@
 # La Douce Heure - Creperie Website 🥞
+French will follow
 
 A modern and elegant website for the "La Douce Heure" creperie, developed with Next.js and modern web technologies.
 
