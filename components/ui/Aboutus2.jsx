@@ -137,7 +137,7 @@ function Aboutus() {
               <div className="relative overflow-hidden rounded-3xl shadow-2xl">
                 <img
                   src="img/pic7.jpg"
-                  alt="Intérieur du restaurant La Douce Heure"
+                  alt="Intérieur du restaurant Café Lyon"
                   className="w-full h-64 sm:h-80 lg:h-96 object-cover transition-all duration-700 transform group-hover:scale-105"
                 />
 
@@ -174,10 +174,10 @@ function Aboutus() {
 
                 <h2 className="font-playfair font-bold text-4xl sm:text-5xl lg:text-6xl xl:text-7xl leading-tight">
                   <span className="bg-gradient-to-r from-amber-600 via-orange-600 to-amber-700 bg-clip-text text-transparent">
-                    La Douce
+                    Café
                   </span>
                   <br />
-                  <span style={{ color: "#321B15" }}>Heure</span>
+                  <span style={{ color: "#321B15" }}>Lyon</span>
                 </h2>
               </div>
 
@@ -186,20 +186,20 @@ function Aboutus() {
                   className="font-space text-lg sm:text-xl leading-relaxed max-w-lg mx-auto lg:mx-0"
                   style={{ color: "#4a2a21" }}
                 >
-                  Un lieu chaleureux où chaque moment devient précieux.
-                  Découvrez nos créations artisanales dans une atmosphère
-                  unique, pensée pour vos instants de bonheur.
+                  Un café authentique où chaque tasse raconte une histoire.
+                  Découvrez nos cafés d'exception et nos pâtisseries artisanales
+                  dans un cadre chaleureux au cœur de Lyon.
                 </p>
 
                 <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
                   <span className="px-3 py-1 bg-amber-100 text-amber-800 rounded-full text-sm font-space font-medium">
-                    Fait maison
+                    Café d'exception
                   </span>
                   <span className="px-3 py-1 bg-orange-100 text-orange-800 rounded-full text-sm font-space font-medium">
-                    Produits locaux
+                    Pâtisseries artisanales
                   </span>
                   <span className="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm font-space font-medium">
-                    Ambiance cosy
+                    Ambiance lyonnaise
                   </span>
                 </div>
               </div>
@@ -222,10 +222,10 @@ function Aboutus() {
                       className="font-space text-xl sm:text-2xl lg:text-3xl font-medium leading-relaxed -mt-8"
                       style={{ color: "#321B15" }}
                     >
-                      Plus qu'une crêpe,
+                      Plus qu'un café,
                       <br />
                       <span className="bg-gradient-to-r from-amber-600 to-orange-600 bg-clip-text text-transparent">
-                        un moment à partager
+                        un art de vivre lyonnais
                       </span>
                     </blockquote>
                   </div>
@@ -235,9 +235,9 @@ function Aboutus() {
                     className="font-space text-base sm:text-lg leading-relaxed max-w-md mx-auto"
                     style={{ color: "rgb(186,176,175)" }}
                   >
-                    Chaque création raconte une histoire, chaque visite devient
-                    un souvenir. Bienvenue dans votre nouvelle adresse
-                    gourmande.
+                    Chaque grain de café est soigneusement sélectionné, chaque
+                    pâtisserie est préparée avec passion. Bienvenue dans votre
+                    café de quartier au cœur de Lyon.
                   </p>
 
                   {/* Call-to-action subtil */}
@@ -272,7 +272,7 @@ function Aboutus() {
               <div className="relative overflow-hidden rounded-3xl shadow-2xl">
                 <img
                   src="img/coffee1.jpg"
-                  alt="Café et spécialités de La Douce Heure"
+                  alt="Café et spécialités de Café Lyon"
                   className="w-full h-64 sm:h-80 lg:h-96 object-cover transition-all duration-700 transform group-hover:scale-105"
                 />
 

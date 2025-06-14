@@ -12,10 +12,10 @@ function Hero() {
 
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center font-['Space_Grotesk'] text-white/95 z-9 backdrop-blur-sm p-5 rounded-sm bg-black/20">
         <h1 className="text-3xl mb-2.5 font-[playfair] uppercase">
-          Pause douceur
+          Café & Pâtisseries
         </h1>
         <p className="text-base text-white/80">
-          Crêperie, 973 grande rue Miribel 01700
+          Café Lyon, 42 Rue de la République, 69002 Lyon
         </p>
       </div>
     </div>

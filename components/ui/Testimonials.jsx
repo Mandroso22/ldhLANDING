@@ -10,43 +10,43 @@ const Testimonials = () => {
   const reviews = [
     {
       id: 1,
-      name: "Adam 69",
+      name: "Thomas Dubois",
       rating: 5,
       date: "Il y a 2 semaines",
-      text: "Si vous cherchez le meilleur bar à desserts du monde, ne cherchez plus, vous l'avez trouvé ! Chaque bouchée est une explosion de saveurs, les textures sont maîtrisées à la perfection, et l'attention aux détails est incroyable. On sent la passion et le savoir-faire derrière chaque création. L'ambiance est chaleureuse, le service impeccable, et les desserts... une vraie extase culinaire ! Impossible de repartir sans avoir goûté plusieurs douceurs tant le choix est irrésistible.À tester absolument, vous ne serez pas déçus !",
-      avatar: "AD",
+      text: "Un excellent café au cœur de Lyon ! L'ambiance est chaleureuse, le service impeccable, et les pâtisseries sont délicieuses. J'adore particulièrement leurs croissants et leur café filtre. L'emplacement est parfait, juste à côté de la Place Bellecour. Je recommande vivement !",
+      avatar: "TD",
     },
     {
       id: 2,
-      name: "Raphael Magnier",
+      name: "Sophie Martin",
       rating: 5,
       date: "Il y a 1 mois",
-      text: "Très heureux d'avoir découvert cette adresse, je suis venue plusieurs fois depuis l'ouverture et vraiment jamais déçu ! Le choix et top ! On peu manger sucré ou salé c'est merveilleux tout est bon et l'ambiance un régal ! Je recommande vraiment",
-      avatar: "RM",
+      text: "Un véritable coup de cœur pour ce café lyonnais ! Les gâteaux sont magnifiques et délicieux, le café est parfaitement torréfié, et l'équipe est très accueillante. L'endroit idéal pour une pause gourmande en plein centre-ville.",
+      avatar: "SM",
     },
     {
       id: 3,
-      name: "Mister S",
+      name: "Lucas Bernard",
       rating: 5,
       date: "Il y a 3 semaines",
-      text: "Très belle expérience dans ce lieu qui fait voyager vers l'Italie le temps d'un instant. Endroit très convivial, et accueillant. Parfait pour manger, ou même simplement pour une petite pause grignotage.Je recommande !",
-      avatar: "MS",
+      text: "Excellent café avec une belle terrasse sur la rue de la République. Les viennoiseries sont faites maison et le café est de grande qualité. Parfait pour un petit-déjeuner ou une pause-café entre deux visites de Lyon.",
+      avatar: "LB",
     },
     {
       id: 4,
-      name: "Marie-Jose Seveyrac",
+      name: "Emma Petit",
       rating: 4,
       date: "Il y a 1 semaine",
-      text: "Accueil très agréable, j'ai découvert le chocolat chaud italien qui est un délice. Les prix sont corrects. Je referais une petite halte dans cette endroit avec plaisirs. Je recommande vivement.",
-      avatar: "MJS",
+      text: "Très bon café avec une belle sélection de pâtisseries. L'ambiance est agréable et le personnel est sympathique. Seul petit bémol : il peut être difficile de trouver une place aux heures de pointe. Je recommande !",
+      avatar: "EP",
     },
     {
       id: 5,
-      name: "Solveig Fernagu",
+      name: "Antoine Moreau",
       rating: 5,
       date: "Il y a 4 jours",
-      text: "Le milk shake extra.Le bowl est super bon même si ce n'est pas du riz noir. C'est frais, et super gentille hôtesse. Top ❤️❤️",
-      avatar: "SF",
+      text: "Un café authentique qui propose de délicieuses spécialités lyonnaises. Le café est excellent, les pâtisseries sont fraîches et le service est rapide. L'endroit parfait pour commencer la journée ou faire une pause gourmande.",
+      avatar: "AM",
     },
   ];
 
@@ -185,7 +185,7 @@ const Testimonials = () => {
                   style={{ color: "#4a2a21" }}
                 >
                   {" "}
-                  La Douce Heure
+                  Café Lyon
                 </span>
               </p>
             </div>
@@ -366,7 +366,7 @@ const Testimonials = () => {
                     style={{ color: "rgb(186,176,175)" }}
                   >
                     Partagez votre expérience et aidez d'autres gourmands à
-                    découvrir La Douce Heure
+                    découvrir Café Lyon
                   </p>
                   <button className="font-space font-medium px-6 py-3 bg-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 hover:scale-105">
                     <span style={{ color: "#321B15" }}>Laisser un avis</span>

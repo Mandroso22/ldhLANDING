@@ -84,17 +84,20 @@ function Location() {
     gsap.fromTo(
       contactButtonRef.current,
       {
-        scale: 0.8,
+        y: 20,
         opacity: 0,
+        scale: 0.95,
       },
       {
-        scale: 1,
+        y: 0,
         opacity: 1,
+        scale: 1,
         duration: 0.8,
+        ease: "power2.out",
         scrollTrigger: {
           trigger: contactButtonRef.current,
-          start: "top 75%",
-          toggleActions: "play none none reverse",
+          start: "top 85%",
+          toggleActions: "play none none none",
         },
       }
     );
@@ -165,10 +168,10 @@ function Location() {
                 <div>
                   <h3 className="text-[1.3rem] mb-2 text-gray-800">Horaires</h3>
                   <p className="text-[1.1rem] text-gray-600 mb-1">
-                    Lundi - Vendredi : 10h - 18h
+                    Lundi - Vendredi : 7h30 - 19h00
                   </p>
                   <p className="text-[1.1rem] text-gray-600">
-                    Samedi - Dimanche : 10h - 20h
+                    Samedi - Dimanche : 8h00 - 20h00
                   </p>
                 </div>
               </div>
@@ -184,7 +187,7 @@ function Location() {
                 </div>
                 <div>
                   <h3 className="text-[1.3rem] mb-2 text-gray-800">Contact</h3>
-                  <p className="text-[1.1rem] text-gray-600">04 74 00 00 00</p>
+                  <p className="text-[1.1rem] text-gray-600">04 78 92 15 36</p>
                 </div>
               </div>
             </div>

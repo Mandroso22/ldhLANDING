@@ -1,8 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import Navbar from "../components/layouts/Navbar";
-import Footer from "../components/layouts/Footer";
+import Navbar from "../../components/layouts/Navbar";
+import Footer from "../../components/layouts/Footer";
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -167,8 +167,8 @@ function Contact() {
               style={{ color: "rgb(186,176,175)" }}
             >
               Nous sommes là pour vous accueillir et répondre à toutes vos
-              questions. N'hésitez pas à nous contacter pour vos réservations ou
-              informations.
+              questions. N'hésitez pas à nous contacter pour vos réservations de
+              groupe, demandes d'information ou suggestions.
             </p>
           </div>
 
@@ -201,13 +201,15 @@ function Contact() {
                     className="font-playfair text-2xl font-semibold"
                     style={{ color: "#321B15" }}
                   >
-                    La Douce Heure
+                    Café Lyon
                   </p>
                   <p
                     className="font-space text-sm"
                     style={{ color: "rgb(186,176,175)" }}
                   >
-                    973 grande rue Miribel 01700
+                    42 Rue de la République
+                    <br />
+                    69002 Lyon, France
                   </p>
                 </div>
               </div>
@@ -409,8 +411,13 @@ function Contact() {
                       }`}
                     >
                       <option value="">Sélectionnez un sujet</option>
-                      <option value="reservation">Réservation</option>
-                      <option value="information">Information</option>
+                      <option value="reservation">Réservation de groupe</option>
+                      <option value="information">
+                        Information sur nos cafés
+                      </option>
+                      <option value="evenement">
+                        Organisation d'événement
+                      </option>
                       <option value="reclamation">Réclamation</option>
                       <option value="autre">Autre</option>
                     </select>
@@ -466,7 +473,7 @@ function Contact() {
                       style={{ color: "rgb(186,176,175)" }}
                     >
                       J'accepte que mes données personnelles soient utilisées
-                      pour traiter ma demande. *
+                      pour traiter ma demande concernant Café Lyon. *
                     </label>
                   </div>
                   {errors.mentionsLegales && (
@@ -564,9 +571,9 @@ function Contact() {
                           className="font-space mt-1"
                           style={{ color: "rgb(186,176,175)" }}
                         >
-                          973 grande rue
+                          42 Rue de la République
                           <br />
-                          01700 Miribel, France
+                          69002 Lyon, France
                         </p>
                       </div>
                     </div>
@@ -601,7 +608,7 @@ function Contact() {
                           className="font-space mt-1"
                           style={{ color: "rgb(186,176,175)" }}
                         >
-                          01 23 45 67 89
+                          04 78 92 15 36
                         </p>
                       </div>
                     </div>
@@ -636,7 +643,7 @@ function Contact() {
                           className="font-space mt-1"
                           style={{ color: "rgb(186,176,175)" }}
                         >
-                          contact@ladouceheure.fr
+                          contact@cafelyon.fr
                         </p>
                       </div>
                     </div>

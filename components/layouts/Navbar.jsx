@@ -12,7 +12,7 @@ function Navbar() {
     <header>
       <nav className="fixed w-full flex justify-between items-center h-[55px] text-white bg-black/10 backdrop-blur-[1px] z-10 shadow-[1px_1px_10px_rgba(0,0,0,0.03)] px-4">
         <h2 className="font-['Playfair_Display'] mr-0.5 text-white/80 text-shadow-[2px_2px_4px_rgba(0,0,0,0.3)] uppercase flex items-center ml-4 cursor-pointer">
-          <a href="/">La douce heure</a>
+          <a href="/">Café Lyon</a>
         </h2>
 
         {/* Icône burger visible uniquement sur mobile */}

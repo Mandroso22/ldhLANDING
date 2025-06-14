@@ -5,10 +5,10 @@ function Slider() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const images = [
     { src: "/img/coffee1.jpg", alt: "Notre café signature" },
-    { src: "/img/pic3.jpeg", alt: "Nos délicieuses crêpes" },
+    { src: "/img/pic3.jpeg", alt: "Nos pâtisseries maison" },
     { src: "/img/pic1.jpeg", alt: "Notre ambiance chaleureuse" },
-    { src: "/img/pic4.jpeg", alt: "Nos boissons artisanales" },
-    { src: "/img/pic5.png", alt: "Notre établissement" },
+    { src: "/img/pic4.jpeg", alt: "Nos cafés d'exception" },
+    { src: "/img/pic5.png", alt: "Notre établissement au cœur de Lyon" },
   ];
 
   useEffect(() => {
@@ -30,7 +30,7 @@ function Slider() {
     <section className="w-full py-16 bg-[#f8f8f8]">
       <div className="max-w-4xl mx-auto px-4">
         <h2 className="text-2xl md:text-3xl text-center text-[#321B15] font-['Playfair_Display'] mb-8">
-          Découvrez notre enseigne
+          Découvrez notre café
         </h2>
 
         <div className="relative overflow-hidden rounded-lg shadow-xl">
