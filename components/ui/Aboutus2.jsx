@@ -136,7 +136,7 @@ function Aboutus() {
             >
               <div className="relative overflow-hidden rounded-3xl shadow-2xl">
                 <img
-                  src="img/pic7.jpg"
+                  src="img/coffee3.jpg"
                   alt="Intérieur du restaurant Café Lyon"
                   className="w-full h-64 sm:h-80 lg:h-96 object-cover transition-all duration-700 transform group-hover:scale-105"
                 />
@@ -222,10 +222,10 @@ function Aboutus() {
                       className="font-space text-xl sm:text-2xl lg:text-3xl font-medium leading-relaxed -mt-8"
                       style={{ color: "#321B15" }}
                     >
-                      Plus qu'un café,
+                      Plus qu'un café, un art de vivre
                       <br />
                       <span className="bg-gradient-to-r from-amber-600 to-orange-600 bg-clip-text text-transparent">
-                        un art de vivre lyonnais
+                        lyonnais
                       </span>
                     </blockquote>
                   </div>
@@ -271,7 +271,7 @@ function Aboutus() {
             >
               <div className="relative overflow-hidden rounded-3xl shadow-2xl">
                 <img
-                  src="img/coffee1.jpg"
+                  src="img/coffee4.jpg"
                   alt="Café et spécialités de Café Lyon"
                   className="w-full h-64 sm:h-80 lg:h-96 object-cover transition-all duration-700 transform group-hover:scale-105"
                 />

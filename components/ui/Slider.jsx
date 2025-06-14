@@ -5,16 +5,16 @@ function Slider() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const images = [
     { src: "/img/coffee1.jpg", alt: "Notre café signature" },
-    { src: "/img/pic3.jpeg", alt: "Nos pâtisseries maison" },
-    { src: "/img/pic1.jpeg", alt: "Notre ambiance chaleureuse" },
-    { src: "/img/pic4.jpeg", alt: "Nos cafés d'exception" },
-    { src: "/img/pic5.png", alt: "Notre établissement au cœur de Lyon" },
+    { src: "/img/coffee6.jpg", alt: "Nos pâtisseries maison" },
+    { src: "/img/pic8.jpg", alt: "Notre ambiance chaleureuse" },
+    { src: "/img/coffee3.jpg", alt: "Nos cafés d'exception" },
+    { src: "/img/pic10.jpg", alt: "Notre établissement au cœur de Lyon" },
   ];
 
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % images.length);
-    }, 7000);
+    }, 10000);
     return () => clearInterval(timer);
   }, []);
 
@@ -34,33 +34,36 @@ function Slider() {
         </h2>
 
         <div className="relative overflow-hidden rounded-lg shadow-xl">
-          {/* Images */}
+          {/* Images avec transition plus douce */}
           <div className="relative h-[400px] md:h-[500px]">
             {images.map((image, index) => (
               <div
                 key={index}
-                className={`absolute inset-0 transition-opacity duration-1000 ${
-                  index === currentSlide ? "opacity-100" : "opacity-0"
+                className={`absolute inset-0 transition-all duration-1500 ease-in-out ${
+                  index === currentSlide
+                    ? "opacity-100 transform scale-100"
+                    : "opacity-0 transform scale-[1.02]"
                 }`}
               >
                 <img
                   src={image.src}
                   alt={image.alt}
                   className="w-full h-full object-cover"
+                  loading="lazy"
                 />
               </div>
             ))}
           </div>
 
-          {/* Navigation buttons */}
+          {/* Navigation buttons avec hover plus visible */}
           <button
             onClick={prevSlide}
-            className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white p-1.5 rounded-full shadow-lg transition-all duration-300"
+            className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white p-2 rounded-full shadow-lg transition-all duration-300 hover:scale-110"
             aria-label="Image précédente"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-4 w-4"
+              className="h-5 w-5"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -75,12 +78,12 @@ function Slider() {
           </button>
           <button
             onClick={nextSlide}
-            className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white p-1.5 rounded-full shadow-lg transition-all duration-300"
+            className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white p-2 rounded-full shadow-lg transition-all duration-300 hover:scale-110"
             aria-label="Image suivante"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-4 w-4"
+              className="h-5 w-5"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -94,14 +97,16 @@ function Slider() {
             </svg>
           </button>
 
-          {/* Dots indicator */}
-          <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+          {/* Dots indicator avec animation plus fluide */}
+          <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-3">
             {images.map((_, index) => (
               <button
                 key={index}
                 onClick={() => setCurrentSlide(index)}
-                className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                  index === currentSlide ? "bg-white w-4" : "bg-white/50"
+                className={`h-2 rounded-full transition-all duration-500 ease-in-out ${
+                  index === currentSlide
+                    ? "bg-white w-6"
+                    : "bg-white/50 w-2 hover:bg-white/70"
                 }`}
                 aria-label={`Aller à l'image ${index + 1}`}
               />
