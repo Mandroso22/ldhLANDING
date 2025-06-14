@@ -64,7 +64,7 @@ function Menu() {
             <div className="absolute inset-0 z-0">
               <div className="absolute inset-0 bg-gradient-to-br from-black/70 via-black/50 to-black/30 z-10"></div>
               <img
-                src="/img/pic5.jpg"
+                src="/img/pic5.webp"
                 alt="Nos cafés signature et pâtisseries artisanales"
                 className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
               />
@@ -108,7 +108,7 @@ function Menu() {
             <div className="absolute inset-0 z-0">
               <div className="absolute inset-0 bg-gradient-to-br from-black/70 via-black/50 to-black/30 z-10"></div>
               <img
-                src="/img/pic6.jpg"
+                src="/img/pic6.webp"
                 alt="Nos brunchs et snacks gourmands"
                 className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
               />
