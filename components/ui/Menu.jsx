@@ -152,7 +152,7 @@ function Menu() {
             <div className="absolute inset-0 z-0">
               <div className="absolute inset-0 bg-gradient-to-br from-black/70 via-black/50 to-black/30 z-10"></div>
               <img
-                src="/img/pic9.jpg"
+                src="/img/pic9.webp"
                 alt="Nos boissons et cocktails café"
                 className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
               />
