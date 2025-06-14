@@ -9,14 +9,41 @@ function Aboutus() {
   const text1Ref = useRef(null);
   const image2Ref = useRef(null);
   const text2Ref = useRef(null);
-  const [hasAnimated, setHasAnimated] = useState({
-    image1: false,
-    text1: false,
-    image2: false,
-    text2: false,
+
+  // Initialiser l'état avec les valeurs du localStorage ou false par défaut
+  const [hasAnimated, setHasAnimated] = useState(() => {
+    if (typeof window !== "undefined") {
+      const saved = localStorage.getItem("aboutusAnimations");
+      return saved
+        ? JSON.parse(saved)
+        : {
+            image1: false,
+            text1: false,
+            image2: false,
+            text2: false,
+          };
+    }
+    return {
+      image1: false,
+      text1: false,
+      image2: false,
+      text2: false,
+    };
   });
 
+  // Sauvegarder l'état dans le localStorage quand il change
   useEffect(() => {
+    if (typeof window !== "undefined") {
+      localStorage.setItem("aboutusAnimations", JSON.stringify(hasAnimated));
+    }
+  }, [hasAnimated]);
+
+  useEffect(() => {
+    // Si toutes les animations ont déjà été jouées, ne pas créer l'observer
+    if (Object.values(hasAnimated).every(Boolean)) {
+      return;
+    }
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -44,8 +71,16 @@ function Aboutus() {
                   x: 0,
                   opacity: 1,
                   scale: 1,
-                  onComplete: () =>
-                    setHasAnimated((prev) => ({ ...prev, image1: true })),
+                  onComplete: () => {
+                    setHasAnimated((prev) => {
+                      const newState = { ...prev, image1: true };
+                      localStorage.setItem(
+                        "aboutusAnimations",
+                        JSON.stringify(newState)
+                      );
+                      return newState;
+                    });
+                  },
                 }
               );
             } else if (element === text1Ref.current && !hasAnimated.text1) {
@@ -61,8 +96,16 @@ function Aboutus() {
                   x: 0,
                   opacity: 1,
                   y: 0,
-                  onComplete: () =>
-                    setHasAnimated((prev) => ({ ...prev, text1: true })),
+                  onComplete: () => {
+                    setHasAnimated((prev) => {
+                      const newState = { ...prev, text1: true };
+                      localStorage.setItem(
+                        "aboutusAnimations",
+                        JSON.stringify(newState)
+                      );
+                      return newState;
+                    });
+                  },
                 }
               );
             } else if (element === image2Ref.current && !hasAnimated.image2) {
@@ -78,8 +121,16 @@ function Aboutus() {
                   x: 0,
                   opacity: 1,
                   scale: 1,
-                  onComplete: () =>
-                    setHasAnimated((prev) => ({ ...prev, image2: true })),
+                  onComplete: () => {
+                    setHasAnimated((prev) => {
+                      const newState = { ...prev, image2: true };
+                      localStorage.setItem(
+                        "aboutusAnimations",
+                        JSON.stringify(newState)
+                      );
+                      return newState;
+                    });
+                  },
                 }
               );
             } else if (element === text2Ref.current && !hasAnimated.text2) {
@@ -95,8 +146,16 @@ function Aboutus() {
                   x: 0,
                   opacity: 1,
                   y: 0,
-                  onComplete: () =>
-                    setHasAnimated((prev) => ({ ...prev, text2: true })),
+                  onComplete: () => {
+                    setHasAnimated((prev) => {
+                      const newState = { ...prev, text2: true };
+                      localStorage.setItem(
+                        "aboutusAnimations",
+                        JSON.stringify(newState)
+                      );
+                      return newState;
+                    });
+                  },
                 }
               );
             }
@@ -104,18 +163,19 @@ function Aboutus() {
         });
       },
       {
-        threshold: 0.2, // Déclenche quand 20% de l'élément est visible
-        rootMargin: "0px", // Pas de marge supplémentaire
+        threshold: 0.2,
+        rootMargin: "0px",
       }
     );
 
-    // Observer tous les éléments
+    // Observer uniquement les éléments qui n'ont pas encore été animés
     const elements = [
-      image1Ref.current,
-      text1Ref.current,
-      image2Ref.current,
-      text2Ref.current,
-    ];
+      !hasAnimated.image1 && image1Ref.current,
+      !hasAnimated.text1 && text1Ref.current,
+      !hasAnimated.image2 && image2Ref.current,
+      !hasAnimated.text2 && text2Ref.current,
+    ].filter(Boolean);
+
     elements.forEach((element) => {
       if (element) observer.observe(element);
     });
